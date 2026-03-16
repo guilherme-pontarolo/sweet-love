@@ -10,12 +10,6 @@ function AppContent() {
   const [currentScene, setCurrentScene] = useState<string | null>(localStorage.getItem('currentScene') || null)
   const { playAudio } = useAudioPlayer()
 
-  useEffect(() => {
-    if (window.location.hostname === 'localhost') {
-      window.location.replace(import.meta.env.VITE_PUBLIC_URL)
-    }
-  }, [])
-
   const start = useCallback(() => {
     setCurrentScene('start')
     localStorage.setItem('currentScene', 'start')
