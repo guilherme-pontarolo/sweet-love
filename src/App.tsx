@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import { Scene } from './components/Scene'
 import { getSceneList } from './engine/storyEngine'
 import { StartMenu } from './components/StartMenu'
