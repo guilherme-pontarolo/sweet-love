@@ -30,11 +30,11 @@ function AppContent() {
     <>
       <AudioPlayer />
       {showStartMenu ? (
-        <div className='relative h-dvh lg:w-3xl sm:w-full'>
+        <div className='relative h-dvh lg:w-3xl sm:w-full overflow-hidden'>
           <StartMenu onStart={start} />
         </div>
       ) : (
-        <div className='relative h-dvh lg:w-3xl sm:w-full'>
+        <div className='relative h-dvh lg:w-3xl sm:w-full overflow-hidden'>
           <button className='absolute top-2 right-2 z-50 bg-white/70 rounded-xl px-1 py-1 font-bold' onDoubleClick={restart}>{t('menu')}</button>
           <Scene scenes={scenes} />
         </div>
