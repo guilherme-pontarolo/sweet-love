@@ -131,4 +131,3 @@ We welcome contributions! If you'd like to contribute to this project, please fo
 5. Open a Pull Request
 
 Please ensure your code follows the project's coding standards and includes appropriate tests if applicable.
-```
