@@ -1,10 +1,10 @@
 import { useState, useMemo, useCallback } from 'react'
-import { useTranslation } from 'react-i18next'
 import { Scene } from './components/Scene'
 import { getSceneList } from './engine/storyEngine'
 import { StartMenu } from './components/StartMenu'
 import { AudioPlayer } from './components/AudioPlayer'
 import { AudioContextProvider, useAudioPlayer } from './contexts/AudioPlayerContext'
+import { BackMenuButton } from './components/BackMenuButton'
 
 function AppContent() {
   const scenes = useMemo(() => getSceneList(), [])
@@ -23,7 +23,6 @@ function AppContent() {
     window.location.reload()
   }, [])
 
-  const { t } = useTranslation()
   const showStartMenu = !currentScene
 
   return (
@@ -35,7 +34,7 @@ function AppContent() {
         </div>
       ) : (
         <div className='relative h-dvh lg:w-3xl sm:w-full overflow-hidden'>
-          <button className='absolute top-2 right-2 z-50 bg-white/70 rounded-xl px-1 py-1 font-bold' onDoubleClick={restart}>{t('menu')}</button>
+          <BackMenuButton onConfirm={restart} />
           <Scene scenes={scenes} />
         </div>
       )}
