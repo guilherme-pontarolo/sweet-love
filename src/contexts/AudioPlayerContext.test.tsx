@@ -2,14 +2,6 @@ import { render, screen } from '@testing-library/react'
 import { AudioContextProvider, useAudioPlayer } from '../contexts/AudioPlayerContext'
 import { describe, expect, it, vi } from 'vitest'
 
-// Mock HTMLAudioElement
-const mockAudioElement = {
-    play: vi.fn(),
-    pause: vi.fn(),
-    volume: 1,
-    currentTime: 0,
-}
-
 Object.defineProperty(window.HTMLMediaElement.prototype, 'play', {
     writable: true,
     value: vi.fn(),
