@@ -14,7 +14,7 @@ This is an interactive visual novel project developed in React with TypeScript. 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone guilherme-pontarolo/sweet-love
    cd sweet-love
    ```
 
@@ -120,29 +120,15 @@ src/
 - i18next
 - React Player
 
-## Contribution
+## Contributing
 
-Feel free to contribute with improvements, fixes, or new features!
-import reactDom from 'eslint-plugin-react-dom'
+We welcome contributions! If you'd like to contribute to this project, please follow these steps:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Make your changes and commit them (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+Please ensure your code follows the project's coding standards and includes appropriate tests if applicable.
 ```
