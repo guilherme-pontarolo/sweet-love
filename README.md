@@ -1,53 +1,128 @@
-# React + TypeScript + Vite
+# Sweet Love - Visual Novel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an interactive visual novel project developed in React with TypeScript. The project uses internationalization (i18n) to support multiple languages and allows the creation of branched stories with dialogues and choices.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive stories with dialogues and choices that affect the plot
+- Internationalization support (Portuguese and English)
+- Audio system for background music and sound effects
+- Customizable character sprites and backgrounds
+- Responsive interface with Tailwind CSS
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd sweet-love
+   ```
 
-## Expanding the ESLint configuration
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. Run the project in development mode:
+   ```bash
+   npm run dev
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+4. Open the browser at `http://localhost:5173` (or the indicated port).
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## How to Customize the Project
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Adjusting the Chapters
+
+The story chapters are located in `src/story/`. Each chapter is an array of `Scene` objects, where each scene contains:
+
+- `id`: Unique scene identifier
+- `dialogue`: i18n key for the dialogue (e.g., "chapter1__start")
+- `choices`: Array of options, each with `text` (i18n key), `nextScene`, and optionally `effects`
+
+To adjust dialogues and mapping:
+
+- Edit the `chapter1.ts` and `chapter2.ts` files
+- Add new scenes or modify existing ones
+- Ensure that `nextScene` points to valid IDs
+
+### 2. Adding Texts to i18n
+
+Texts are organized in `src/locales/pt/` and `src/locales/en/`.
+
+- To add new texts, edit `translation.json` in both folders
+- Use descriptive keys for easier maintenance
+
+### 3. Using i18n Keys in Chapters
+
+In the `chapter1.ts` and `chapter2.ts` files, use the following key conventions:
+
+- **Dialogues**: `chapter{id}__{scene_id}` (e.g., `chapter1__start`, `chapter2__19`)
+- **Options**: `chapter{id}_{scene_id}_option{number}` (e.g., `chapter1_start_option1`, `chapter2_19_option2`)
+
+Example:
+```typescript
+{
+  id: "start",
+  dialogue: "chapter1__start",
+  choices: [
+    { text: "chapter1_start_option1", nextScene: "1" },
+    { text: "chapter1_start_option2", nextScene: "2" }
+  ]
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Add the corresponding translations in the locale files.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
+### 4. Updating Sprites
+
+- **Backgrounds**: Add images to `src/assets/images/wallPapers/` and import them in the chapter
+- **Characters**: Add sprites to `src/assets/images/character/man/` or `woman/`
+- Update the `backgroundImage`, `manMood`, and `womanMood` properties in the scenes
+
+## How to Deploy the Project
+
+1. Run the production build:
+   ```bash
+   npm run build
+   ```
+
+2. The optimized files will be generated in the `dist/` folder.
+
+3. To preview locally:
+   ```bash
+   npm run preview
+   ```
+
+4. For deployment:
+   - Upload the `dist/` folder to a static web server (e.g., Netlify, Vercel, GitHub Pages)
+   - Or configure a server to serve the static files
+
+## Project Structure
+
+```
+src/
+├── components/     # React components
+├── contexts/       # Contexts (e.g., AudioPlayer)
+├── engine/         # Story engine logic
+├── hooks/          # Custom hooks
+├── locales/        # Translation files
+├── story/          # Story chapters
+└── assets/         # Images and audios
+```
+
+## Technologies Used
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- i18next
+- React Player
+
+## Contribution
+
+Feel free to contribute with improvements, fixes, or new features!
 import reactDom from 'eslint-plugin-react-dom'
 
 export default defineConfig([
