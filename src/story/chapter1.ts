@@ -8,10 +8,10 @@ export const chapter1: Scene[] = [
     manMood: "neutral",
     womanMood: "neutral",
     backgroundImage: wallPaper0,
-    dialogue: "Oi 💕 Estava esperando por você, meu amor!",
+    dialogue: "chapter1__start",
     choices: [
       {
-        text: "Mas o que...? 😳",
+        text: "chapter1_start_option1",
         nextScene: "1",
         effects: (state) => ({
           ...state,
@@ -22,7 +22,7 @@ export const chapter1: Scene[] = [
         })
       },
       {
-        text: "Você e eu... amor doce...",
+        text: "chapter1_start_option2",
         nextScene: "2"
       }
     ]
@@ -32,14 +32,14 @@ export const chapter1: Scene[] = [
     womanMood: "surprised",
     manMood: "happy",
     backgroundImage: wallPaper0,
-    dialogue: "Você parece surpresa.. não posso te culpar, não é algo que acontece com frequência né? haha",
+    dialogue: "chapter1__1",
     choices: [
       {
-        text: "Realmente.. o que você está aprontando?",
+        text: "chapter1_1_option1",
         nextScene: "3"
       },
       {
-        text: "Não mesmo. Você está bem?",
+        text: "chapter1_1_option2",
         nextScene: "4"
       }
     ]
@@ -49,14 +49,14 @@ export const chapter1: Scene[] = [
     womanMood: "surprised",
     manMood: "happy",
     backgroundImage: wallPaper0,
-    dialogue: "Me pegou haha achei que essa música no fundo ficaria muito legal. O que você achou?",
+    dialogue: "chapter1__2",
     choices: [
       {
-        text: "Estou realmente surpresa",
+        text: "chapter1_2_option1",
         nextScene: "5"
       },
       {
-        text: "Eu amei 💕",
+        text: "chapter1_2_option2",
         nextScene: "5"
       },
     ]
@@ -66,10 +66,10 @@ export const chapter1: Scene[] = [
     womanMood: "neutral",
     manMood: "neutral",
     backgroundImage: wallPaper0,
-    dialogue: "Eu preparei algumas coisinhas para ti. Eu havia planejado fazer isso no Valentine's Day, mas acabei me atrasando um pouquinho. O dia das mulheres veio a calhar, ainda mais que você é uma mulher incrível.",
+    dialogue: "chapter1__3",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_3_option1",
         nextScene: "6"
       },
     ]
@@ -79,10 +79,10 @@ export const chapter1: Scene[] = [
     womanMood: "concerned",
     manMood: "neutral",
     backgroundImage: wallPaper0,
-    dialogue: "Ha ha.. bocó. Enfim, seguindo...",
+    dialogue: "chapter1__4",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_4_option1",
         nextScene: "6"
       },
     ]
@@ -92,10 +92,10 @@ export const chapter1: Scene[] = [
     womanMood: "very-happy",
     manMood: "very-happy",
     backgroundImage: wallPaper0,
-    dialogue: "Fico feliz ❤️ você é o amor da minha vida, e queria te lembrar disso. Eu planejei fazer isso no Valentine's Day, mas as coisas não saíram exatamente como planejado. Como você é uma mulher maravilhosa, fico feliz em ser no dia da mulher.",
+    dialogue: "chapter1__5",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_5_option1",
         nextScene: "6"
       },
     ]
@@ -105,14 +105,14 @@ export const chapter1: Scene[] = [
     womanMood: "surprised",
     manMood: "happy",
     backgroundImage: wallPaper0,
-    dialogue: "Sabe, eu já disse o quanto gosto da cor dos seus ollhos? O castanho esverdeado deles são duas joias maravilhosas.",
+    dialogue: "chapter1__6",
     choices: [
       {
-        text: "Você está me deixando envergonhada 😳",
+        text: "chapter1_6_option1",
         nextScene: "7"
       },
       {
-        text: "Meus olhos são verdes 👀",
+        text: "chapter1_6_option2",
         nextScene: "8"
       },
     ]
@@ -122,10 +122,10 @@ export const chapter1: Scene[] = [
     womanMood: "embarrassed",
     manMood: "very-happy",
     backgroundImage: wallPaper0,
-    dialogue: "Haha.. mas eu ainda nem comecei...",
+    dialogue: "chapter1__7",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_7_option1",
         nextScene: "9"
       },
     ]
@@ -135,10 +135,10 @@ export const chapter1: Scene[] = [
     womanMood: "neutral",
     manMood: "neutral",
     backgroundImage: wallPaper0,
-    dialogue: "Castanho esverdeado, meu bem. É claro, você sabe o quão raros eles são, e eu amo ficar contemplando eles.",
+    dialogue: "chapter1__8",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_8_option1",
         nextScene: "9"
       },
     ]
@@ -148,10 +148,10 @@ export const chapter1: Scene[] = [
     womanMood: "neutral",
     manMood: "neutral",
     backgroundImage: wallPaper0,
-    dialogue: "Antes de qualquer coisa, queria te lembrar do quanto eu te amo e que...",
+    dialogue: "chapter1__9",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_9_option1",
         nextScene: "10"
       },
     ]
@@ -161,14 +161,14 @@ export const chapter1: Scene[] = [
     womanMood: "surprised",
     manMood: "loving",
     backgroundImage: wallPaper0,
-    dialogue: "Você é uma mulher maravilhosa. Vou tentar resumir: linda, maravilhosa, Deusa da minha vida, transcendente, hipnotizante, gostosa, cheirosa, cremosa...",
+    dialogue: "chapter1__10",
     choices: [
       {
-        text: "Aiin amor... já deu kkk 😅",
+        text: "chapter1_10_option1",
         nextScene: "11"
       },
       {
-        text: "Que exagero homem",
+        text: "chapter1_10_option2",
         nextScene: "11"
       },
     ]
@@ -178,10 +178,10 @@ export const chapter1: Scene[] = [
     womanMood: "happy",
     manMood: "sad",
     backgroundImage: wallPaper0,
-    dialogue: "Aaah, mas eu quero falar com todas as palavras possíveis, o quanto eu amo e admiro você.",
+    dialogue: "chapter1__11",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_11_option1",
         nextScene: "12"
       },
     ]
@@ -191,14 +191,14 @@ export const chapter1: Scene[] = [
     womanMood: "loving",
     manMood: "loving",
     backgroundImage: wallPaper0,
-    dialogue: "Sabe, eu mal posso esperar pelo dia em que deixarei de te chamar de noiva, e te chamarei de minha mulher 🩵",
+    dialogue: "chapter1__12",
     choices: [
       {
-        text: "Eu sou dona de mim",
+        text: "chapter1_12_option1",
         nextScene: "13"
       },
       {
-        text: "Bobo... 💕",
+        text: "chapter1_12_option2",
         nextScene: "14"
       },
     ]
@@ -208,10 +208,10 @@ export const chapter1: Scene[] = [
     womanMood: "angry",
     manMood: "neutral",
     backgroundImage: wallPaper0,
-    dialogue: "Mas é claro. Eu sei disso melhor que ninguém.",
+    dialogue: "chapter1__13",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_13_option1",
         nextScene: "15"
       },
     ]
@@ -221,10 +221,10 @@ export const chapter1: Scene[] = [
     womanMood: "very-happy",
     manMood: "loving",
     backgroundImage: wallPaper0,
-    dialogue: "Você me deixa assim. Sei que, conforme o tempo passa, a confiança um no outro aumenta mais e mais. Também sei que muitas vezes a rotina acaba tornando as coisas um pouco... monótonas",
+    dialogue: "chapter1__14",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_14_option1",
         nextScene: "16"
       },
     ]
@@ -234,10 +234,10 @@ export const chapter1: Scene[] = [
     womanMood: "neutral",
     manMood: "happy",
     backgroundImage: wallPaper0,
-    dialogue: "Eu quero ser seu parceiro incondicional, e estarei SEMPRE aqui para você 🩵",
+    dialogue: "chapter1__15",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_15_option1",
         nextScene: "17"
       },
     ]
@@ -247,10 +247,10 @@ export const chapter1: Scene[] = [
     womanMood: "neutral",
     manMood: "neutral",
     backgroundImage: wallPaper0,
-    dialogue: "Por isso eu quero te lembrar o quanto você é especial, e o quanto nossa vida é maravilhosa.",
+    dialogue: "chapter1__16",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_16_option1",
         nextScene: "17"
       },
     ]
@@ -260,10 +260,10 @@ export const chapter1: Scene[] = [
     womanMood: "concerned",
     manMood: "neutral",
     backgroundImage: wallPaper0,
-    dialogue: "Enfim, estou me prolongando aqui",
+    dialogue: "chapter1__17",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_17_option1",
         nextScene: "18"
       },
     ]
@@ -273,10 +273,10 @@ export const chapter1: Scene[] = [
     womanMood: "surprised",
     manMood: "happy",
     backgroundImage: wallPaper0,
-    dialogue: "Você poderia dar um pulinho no quarto? Eu tenho um presente para você.",
+    dialogue: "chapter1__18",
     choices: [
       {
-        text: "Próximo",
+        text: "chapter1_18_option1",
         nextScene: "19"
       },
     ]

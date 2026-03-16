@@ -3,6 +3,7 @@ import type { Choice, Scene } from "../engine/types"
 import { ChoiceList } from "./ChoiceList"
 import { Sprite } from "./Sprite"
 import { memo, useCallback } from "react"
+import { useTranslation } from "react-i18next"
 
 export interface SpeechProps {
   scene: Scene
@@ -19,18 +20,7 @@ export const Speech = memo(function Speech(props: SpeechProps) {
     props.backScene()
   }, [playBackButtonEffect, props])
 
-  function BackButton() {
-    if (!props.canBackScene) {
-      return <></>
-    }
-
-    return <button
-      className="px-3 py-1 ml-12 mb-2 rounded-2xl h-8 bg-rose-400 text-white"
-      onClick={handleBackClick}
-    >
-      Voltar
-    </button>
-  }
+  const { t } = useTranslation()
 
   return (
     <div className="absolute bottom-0 w-full bg-transparent">
@@ -46,7 +36,14 @@ export const Speech = memo(function Speech(props: SpeechProps) {
         </div>
 
         <div className="w-full">
-          <BackButton />
+          {props.canBackScene && (
+            <button
+              className="px-3 py-1 ml-12 mb-2 rounded-2xl h-8 bg-rose-400 text-white"
+              onClick={handleBackClick}
+            >
+              {t('back')}
+            </button>
+          )}
           <div className="bg-white/70 pl-10 z-10 border-t-2 border-rose-300">
             <ChoiceList scene={props.scene} choose={props.choose} />
           </div>

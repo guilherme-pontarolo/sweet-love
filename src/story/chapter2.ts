@@ -9,10 +9,10 @@ export const chapter2: Scene[] = [
     manMood: "happy",
     womanMood: "neutral",
     backgroundImage: wallPaper1,
-    dialogue: "Antes de você abrir, gostaria de dizer que, além de saber que você queria isso, serve para um propósito muito além disso.",
+    dialogue: "chapter2__19",
     choices: [
-      { text: "Como assim?", nextScene: "20" },
-      { text: "Eu queria? Será que...", nextScene: "20" }
+      { text: "chapter2_19_option1", nextScene: "20" },
+      { text: "chapter2_19_option2", nextScene: "20" }
     ]
   },
   {
@@ -20,26 +20,26 @@ export const chapter2: Scene[] = [
     manMood: "happy",
     womanMood: "neutral",
     backgroundImage: wallPaper1,
-    dialogue: "Calma haha você vai ver.",
-    choices: [{ text: "Próximo", nextScene: "21" }]
+    dialogue: "chapter2__20",   
+    choices: [{ text: "chapter2_20_option1", nextScene: "21" }]
   },
   {
     id: "21",
     manMood: "very-happy",
     womanMood: "neutral",
     backgroundImage: wallPaper1,
-    dialogue: "Abre, por favor! Estou ansioso para ver o que vai achar",
-    choices: [{ text: "[Após abrir]", nextScene: "22" }]
+    dialogue: "chapter2__21",
+    choices: [{ text: "chapter2_21_option1", nextScene: "22" }]
   },
   {
     id: "22",
     manMood: "happy",
     womanMood: "surprised",
     backgroundImage: wallPaper1,
-    dialogue: "Nossos momentos mais importantes precisam de registro, não acha?",
+    dialogue: "chapter2__22",
     choices: [
-      { text: "Nossa amor... eu amei 🥰", nextScene: "23" },
-      { text: "Essa é a melhor forma de registrar ❤️", nextScene: "24" }
+      { text: "chapter2_22_option1", nextScene: "23" },
+      { text: "chapter2_22_option2", nextScene: "24" }
     ]
   },
   {
@@ -47,18 +47,18 @@ export const chapter2: Scene[] = [
     manMood: "loving",
     womanMood: "very-happy",
     backgroundImage: wallPaper1,
-    dialogue: "Sabia que você ia gostar. Faz tanto tempo que você queria ela, né? Você fica tão linda feliz 🥰",
-    choices: [{ text: "Próximo", nextScene: "25" }]
+    dialogue: "chapter2__23",
+    choices: [{ text: "chapter2_23_option1", nextScene: "25" }]
   },
   {
     id: "24",
     manMood: "loving",
     womanMood: "happy",
     backgroundImage: wallPaper1,
-    dialogue: "Não é mesmo? O que acha de tirarmos a nossa primeira foto? Vamos começar a registrar nossas memórias 🥰",
+    dialogue: "chapter2__24",
     choices: [
-      { text: "Agora? Bem, é que...", nextScene: "26" },
-      { text: "Bora 🤗", nextScene: "27" }
+      { text: "chapter2_24_option1", nextScene: "26" },
+      { text: "chapter2_24_option2", nextScene: "27" }
     ]
   },
   {
@@ -66,10 +66,10 @@ export const chapter2: Scene[] = [
     manMood: "happy",
     womanMood: "happy",
     backgroundImage: wallPaper1,
-    dialogue: "Vamos tirar nossa primeira foto?",
+    dialogue: "chapter2__25",
     choices: [
-      { text: "Agora? Bem, é que...", nextScene: "26" },
-      { text: "Bora 🤗", nextScene: "27" }
+      { text: "chapter2_25_option1", nextScene: "26" },
+      { text: "chapter2_25_option2", nextScene: "27" }
     ]
   },
   {
@@ -77,18 +77,18 @@ export const chapter2: Scene[] = [
     manMood: "loving",
     womanMood: "embarrassed",
     backgroundImage: wallPaper1,
-    dialogue: "Não se preocupe, meu bem. Se ela não ficar boa, tiramos outra!",
-    choices: [{ text: "[Tirar Foto]", nextScene: "27" }]
+    dialogue: "chapter2__26",
+    choices: [{ text: "chapter2_26_option1", nextScene: "27" }]
   },
   {
     id: "27",
     manMood: "happy",
     womanMood: "happy",
     backgroundImage: wallPaper1,
-    dialogue: "O que você achou?",
+    dialogue: "chapter2__27",
     choices: [
-      { text: "Ficou perfeita 😍", nextScene: "28" },
-      { text: "Talvez tirar mais uma...", nextScene: "29" }
+      { text: "chapter2_27_option1", nextScene: "28" },
+      { text: "chapter2_27_option2", nextScene: "29" }
     ]
   },
   {
@@ -96,26 +96,26 @@ export const chapter2: Scene[] = [
     manMood: "loving",
     womanMood: "very-happy",
     backgroundImage: wallPaper1,
-    dialogue: "Nossa primeira polaroid juntos ❤️ de muitas. Só fico imaginando você e a Dri se divertindo com ela, haha",
-    choices: [{ text: "Próximo", nextScene: "30" }]
+    dialogue: "chapter2__28",
+    choices: [{ text: "chapter2_28_option1", nextScene: "30" }]
   },
   {
     id: "29",
     manMood: "happy",
     womanMood: "neutral",
     backgroundImage: wallPaper1,
-    dialogue: "Vamos tirar outra, então. Não é muito fácil tirar selfie com ela, né?",
-    choices: [{ text: "Próximo", nextScene: "30" }]
+    dialogue: "chapter2__29",
+    choices: [{ text: "chapter2_29_option1", nextScene: "30" }]
   },
   {
     id: "30",
     manMood: "happy",
     womanMood: "very-happy",
     backgroundImage: wallPaper1,
-    dialogue: "Eu comprei ela a um tempo, e estava esperando o momento ideal para te dar.",
+    dialogue: "chapter2__30",
     choices: [
-      { text: "Vi que você estava aprontando memsmo...", nextScene: "31" },
-      { text: "Eu amei, amor. Então, o jantar especial de hoje...", nextScene: "31" }
+      { text: "chapter2_30_option1", nextScene: "31" },
+      { text: "chapter2_30_option2", nextScene: "31" }
     ]
   },
   {
@@ -123,10 +123,10 @@ export const chapter2: Scene[] = [
     manMood: "embarrassed",
     womanMood: "happy",
     backgroundImage: wallPaper1,
-    dialogue: "Sim haha você me pegou. O jantar faz parte dessa surpresinha. Eu tinha planejado te levar comer fora, mas como somos bocós estamos com poucos recursos",
+    dialogue: "chapter2__31",
     choices: [
-      { text: "O importante é a intenção 🤗", nextScene: "32" },
-      { text: "Ah não se preocupe, tenho certeza de que vai ficar uma delícia ❤️", nextScene: "33" }
+      { text: "chapter2_31_option1", nextScene: "32" },
+      { text: "chapter2_31_option2", nextScene: "33" }
     ]
   },
   {
@@ -134,24 +134,24 @@ export const chapter2: Scene[] = [
     manMood: "loving",
     womanMood: "happy",
     backgroundImage: wallPaper1,
-    dialogue: "Fico feliz que pense assim. Pode ter certeza que irei caprichar ❤️",
-    choices: [{ text: "Próximo", nextScene: "34" }]
+    dialogue: "chapter2__32",
+    choices: [{ text: "chapter2_32_option1", nextScene: "34" }]
   },
   {
     id: "33",
     manMood: "embarrassed",
     womanMood: "very-happy",
     backgroundImage: wallPaper1,
-    dialogue: "Owwwn, obrigado amor ❤️ eu vou me esforçar, também espero que fique bom.",
-    choices: [{ text: "Próximo", nextScene: "34" }]
+    dialogue: "chapter2__33",
+    choices: [{ text: "chapter2_33_option1", nextScene: "34" }]
   },
   {
     id: "34",
     manMood: "neutral",
     womanMood: "neutral",
     backgroundImage: wallPaper1,
-    dialogue: "Agora, preciso ir para a cozinha preparar nosso jantar especial. Até daqui a pouco, meu amor!",
-    choices: [{ text: "[FIM]", nextScene: "end" }]
+    dialogue: "chapter2__34",
+    choices: [{ text: "chapter2_34_option1", nextScene: "end" }]
   },
   {
     id: "end",
