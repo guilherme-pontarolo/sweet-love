@@ -111,6 +111,21 @@ src/
 └── assets/         # Images and audios
 ```
 
+## Running Tests
+
+The project includes a comprehensive test suite using Vitest and Testing Library.
+
+```bash
+# Run tests once
+npm run test:run
+
+# Run tests in watch mode
+npm test
+
+# Run tests with UI
+npm run test:ui
+```
+
 ## Technologies Used
 
 - React 19
@@ -118,7 +133,8 @@ src/
 - Vite
 - Tailwind CSS
 - i18next
-- React Player
+- Vitest (Testing)
+- Testing Library
 
 ## Contributing
 
